@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/Slice';
 import Men from '../pages/Men';
-import Women from '../pages/Women';
 
 const Filter = ({menStatus}) => {
   const dispatch = useDispatch();

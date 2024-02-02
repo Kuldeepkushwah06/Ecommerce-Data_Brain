@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import Filter from './Filter';
-import { NavLink, Route, Routes, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
-    // const [menClicked, setMenClicked] = useState(false);
 
     const toggleCategory = () => {
         setIsOpen(!isOpen)
@@ -13,14 +11,12 @@ const Navbar = () => {
 
 
 
-    // const menHandler = () => {
-    //     setMenClicked(!menClicked)
-    // }
+   
     return (
         <div className='flex items-center justify-center my-4 mx-2 z-10 '>
             <nav className='outline flex justify-evenly items-center w-[95%] bg-slate-900'>
                 <div className=' w-[10%]'>
-                    <img src='https://img.freepik.com/premium-vector/brain-idea-technology-with-lamp-logo-design_73539-589.jpg?w=360'
+                    <img alt='hr' src='https://img.freepik.com/premium-vector/brain-idea-technology-with-lamp-logo-design_73539-589.jpg?w=360'
                         className=''
                     />
                 </div>
@@ -50,44 +46,35 @@ const Navbar = () => {
                                 <div className="origin-top-right absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                         <NavLink to='/men'>
-                                            <a
-                                                // onClick={menHandler}
-                                                href="#"
+                                            <div
                                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                                                role="menuitem"
                                             >
                                                 Men
-                                            </a>
+                                            </div>
                                         </NavLink>
 
                                         <NavLink to='/women'>
-                                            <a
-                                                href="#"
+                                            <div
                                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                                                role="menuitem"
                                             >
                                                 Women
-                                            </a>
+                                            </div>
                                         </NavLink>
 
                                         <NavLink to='/jewelery'>
-                                            <a
-                                                href="#"
+                                            <div
                                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                                                role="menuitem"
                                             >
                                                 Jewelery
-                                            </a>
+                                            </div>
                                         </NavLink>
 
                                         <NavLink to='/electronics'>
-                                            <a
-                                                href="#"
+                                            <div
                                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                                                role="menuitem"
                                             >
                                                 Electronics
-                                            </a>
+                                            </div>
                                         </NavLink>
                                     </div>
                                 </div>

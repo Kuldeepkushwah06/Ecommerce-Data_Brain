@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-import Summary from './Summary';
+
 import { useDispatch } from 'react-redux';
 import {storeData} from '../redux/formSlice'
 
 const BuyForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [formData, setFormData] = useState({});
 
   const navigate = useNavigate()
 

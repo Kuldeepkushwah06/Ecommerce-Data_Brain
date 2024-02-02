@@ -1,38 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Card from './Card';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/Slice';
 const Home = () => {
 
-    // const API_URL ='https://fakestoreapi.com/products'
-    // const [cardData,setCardData]= useState([]);
-    // // const [isLoading,setIsLoading]= useState(false);
-
-    // const fetchData= async ()=>{
-    //     // setIsLoading(true);
-    //     try{
-    //         const res = await fetch(API_URL)
-    //         const output = await res.json()
-    //         setCardData(output)
-    //         console.log(output)
-    //     }
-    //     catch(error){
-    //         console.log("data fetch nahi ho raha h",error);
-    //     }
-    //     // setIsLoading(false)
-
-    // }
-
-    // useEffect(()=>{
-    //     fetchData()
-    // },[])
+   
     const dispatch = useDispatch();
     const products = useSelector((state) => state.products.items);
     const status = useSelector((state) => state.products.status);
 
     useEffect(() => {
     if (status === 'idle') {
-      // Only dispatch fetchProducts if status is 'idle'
       dispatch(fetchProducts());
     }
   }, [dispatch, status]);
