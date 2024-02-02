@@ -26,7 +26,7 @@ if(!formData || !productItem){
         </div>
         <div className="flex justify-between">
           <div>
-            <p className="text-green-700 font-bold">${productItem?.price}</p>
+            <p className="text-green-700 font-bold">Price:  ${productItem?.price}</p>
           </div>
         </div>
       </div>
@@ -35,17 +35,17 @@ if(!formData || !productItem){
         <h2 className="text-lg font-bold mb-3 text-slate-900 ">User Information</h2>
         <div className="flex flex-col gap-3 text-slate-600">
           <p className='font-semibold text-sm'>
-            <span className="font-semibold text-sm">Name:</span> {formData?.personalDetails?.firstName} {formData?.personalDetails?.lastName}
+            <span className="font-bold text-sm">Name:</span> {formData?.personalDetails?.firstName} {formData?.personalDetails?.lastName}
           </p>
           <p className='font-semibold text-sm'>
-            <span className="font-semibold text-sm">Email:</span> {formData?.personalDetails?.email}
+            <span className="font-bold text-sm">Contact:</span> {formData?.personalDetails?.contactNumber}
           </p>
           <p className='font-semibold text-sm'>
-            <span className="font-semibold text-sm">Address:</span> {formData?.address?.street}, {formData?.address?.city},{' '}
+            <span className="font-bold text-sm">Address:</span> {formData?.address?.street}, {formData?.address?.city},{' '}
             {formData?.address?.zip}
           </p>
           <p className='font-semibold text-sm'>
-            <span className="font-semibold text-sm">Payment Method:</span> {formData?.paymentDetails?.paymentMethod} Card
+            <span className="font-bold text-sm">Payment Method:</span> {formData?.paymentDetails?.paymentMethod} Card
           </p>
         </div>
       </div>
