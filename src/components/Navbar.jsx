@@ -80,9 +80,9 @@ const Navbar = () => {
                                 </div>
                             )}
                         </div>
-                        <li className='inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-gray-800 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75'>About</li>
+                        {/* <li className='inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-gray-800 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75'>About</li>
 
-                        <li className='inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-gray-800 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75'>Services</li>
+                        <li className='inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white  rounded-md hover:bg-gray-800 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75'>Services</li> */}
                     </ul>
                 </div>
 
